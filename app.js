@@ -6,7 +6,7 @@ $.ajax("data.json").then(function(response) {
         var firstName = response[i].first_name;
         var lastName = response[i].last_name;
         var email = response[i].email;
-        $content = "ID: " + id + '<br/>' + "Gender: " + gender + '<br/>' + "Name: " + firstName + " " + lastName + '<br/>' + "Email: " + email + '\n';
+        $content = '<br/>' + "ID: " + id + '<br/>' + "Gender: " + gender + '<br/>' + "Name: " + firstName + " " + lastName + '<br/>' + "Email: " + email + '<br/>';
         $('.stuff').append($content);
 
     }
